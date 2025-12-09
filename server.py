@@ -175,4 +175,5 @@ if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     log(f"伺服器啟動中 (Port: {port})...")
     # host='0.0.0.0' 是必須的，這樣外部網路才能訪問 Docker 容器
-    socketio.run(app, host='0.0.0.0', port=port, allow_unsafe_werkzeug=True)
+    socketio.run(app, host='0.0.0.0', port=port)
+
